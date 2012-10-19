@@ -1,0 +1,39 @@
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -o-transition arguments
+  transition arguments
+
+.nav-bar
+  white-space nowrap
+  width 100%
+  overflow-x hidden
+.nav-back
+  cursor pointer
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+.nav-title
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+.nav-container
+  overflow hidden
+  width 100%
+  position relative
+.nav-view
+  display block
+  width 100%
+  position absolute
+  top 0
+  left 0
+  z-index 999
+  &.current
+    z-index 1000
+    position relative
+  &.slide
+    z-index 1000
+    transition(all, 300ms, linear)
+.nav-go, .nav-url
+  cursor pointer
+  display block

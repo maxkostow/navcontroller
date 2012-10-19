@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <title>Nav Controller Demo</title>
+  <script type="text/javascript" src="lib/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="lib/hammer.js"></script>
+  <script type="text/javascript" src="lib/jquery.specialevent.hammer.js"></script>
+  <script type="text/javascript" src="src/nav_controller.js"></script>
+  <script type="text/javascript" src="demo.js"></script>
+  <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+  <div class="nav-controller">
+    <div class="nav-bar">
+    </div>
+    <div id="nav-bar-content-home" style="display:none;">
+      <h1 class="home-title">Custom title bar for home list</h1>
+    </div>
+    <div class="nav-container">
+      <div class="nav-view current" id="home" data-nav-title="Home">
+        <ul>
+          <li class="nav-go" data-nav-id="view1">
+            <span>View 1</span>
+            <span class="follow"></span>
+          </li>
+          <li class="nav-go" data-nav-id="view2">
+            <span>View 2</span>
+            <span class="follow"></span>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-view" id="view1" data-nav-title="View 1">
+        <div class="view-text">View 1</div>
+      </div>
+      <div class="nav-view" id="view2" data-nav-title="View 2">
+        <div class="view-text">View 2</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

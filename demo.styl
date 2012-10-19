@@ -1,0 +1,81 @@
+@import "src/nav-controller"
+
+body
+  font-family sans-serif
+  margin 0
+
+ul, li
+  margin 0
+  padding 0
+  list-style-type none
+
+.nav-bar
+  text-align center
+  z-index 10000
+  background #444
+  height 44px
+  .nav-back
+    display block
+    position absolute
+    left 5px
+    top 5px
+    line-height 25px
+    padding 3px 10px 3px 10px
+    max-width 25%
+    color #fff
+    text-shadow 0 -.125em 0 #7c7070
+    background #191824
+    font-size 16px
+    font-weight bold
+    border-radius 4px
+    border 1px solid rgba(0,0,0,0.4)
+    &.tapped
+      background #00338d
+
+  .nav-title
+    font-size 24px
+    font-weight bold
+    color #fff
+    line-height 41px
+    box_sizing(border-box)
+    text-shadow 0 -.125em 0 #7c7070
+
+
+#home
+  background #f99
+#home.toggle
+  background #fdd
+#home li
+  padding 20px
+  font-size 36px
+  color #333
+  border-bottom 1px solid #333
+
+.home-title
+  color #eee
+  margin 0
+  font-size 32px
+  line-height 44px
+
+.follow
+  float right
+  margin 10px
+  display inline-block
+  width 0px
+  height 0px
+  border-top 10px solid transparent
+  border-bottom 10px solid transparent
+  border-left 10px solid #ababab
+
+
+.view-text
+  font-size 64px
+  text-align center
+  padding 20px 0
+
+#view2
+  background #ddd
+  color #333
+#view1
+  background #222
+  color #eee
