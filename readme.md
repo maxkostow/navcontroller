@@ -2,7 +2,7 @@
 
 This is a small demo of a mobile navigation controller that I wrote.
 
-It requires [jQuery][jq] for events and selectors and [Hammer.js][hammer] for touch events.
+It requires [jQuery][jq] and [Hammer.js][hammer] for touch events.
 
 It will use hardware accelerated CSS transitions on webkit browsers.
 
